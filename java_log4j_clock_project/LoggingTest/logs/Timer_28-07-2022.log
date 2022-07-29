@@ -1,0 +1,21 @@
+
+21:29:25 [main] DEBUG demopackage.LoggingDemo - 21:29.25
+21:29:26 [main] DEBUG demopackage.LoggingDemo - 21:29.26
+21:29:27 [main] DEBUG demopackage.LoggingDemo - 21:29.27
+21:29:28 [main] DEBUG demopackage.LoggingDemo - 21:29.28
+21:29:29 [main] DEBUG demopackage.LoggingDemo - 21:29.29
+21:29:30 [main] DEBUG demopackage.LoggingDemo - 21:29.30
+21:29:31 [main] DEBUG demopackage.LoggingDemo - 21:29.31
+21:29:32 [main] DEBUG demopackage.LoggingDemo - 21:29.32
+21:29:33 [main] DEBUG demopackage.LoggingDemo - 21:29.33
+21:29:34 [main] DEBUG demopackage.LoggingDemo - 21:29.34
+21:29:35 [main] DEBUG demopackage.LoggingDemo - 21:29.35
+21:29:36 [main] DEBUG demopackage.LoggingDemo - 21:29.36
+21:30:25 [main] INFO  demopackage.LoggingDemo - 21:30:00
+21:30:31 [main] INFO  demopackage.LoggingDemo - 21:30:00
+21:30:37 [main] INFO  demopackage.LoggingDemo - 21:30:00
+21:30:44 [main] INFO  demopackage.LoggingDemo - 21:30:00
+21:30:50 [main] INFO  demopackage.LoggingDemo - 21:30:00
+21:30:56 [main] INFO  demopackage.LoggingDemo - 21:30:00
+21:31:02 [main] INFO  demopackage.LoggingDemo - 21:31:00
+21:31:08 [main] INFO  demopackage.LoggingDemo - 21:31:00
