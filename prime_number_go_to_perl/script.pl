@@ -4,11 +4,11 @@ use 5.010;
 use strict;
 use warnings;
 
-my $filename = 'c:\gokurs\result.txt';
+my $filename = 'result.txt';
 open(FH, '<', $filename) or die $!;
 
 
-my $filename2 = 'c:\PerlPrograms\primeResult.txt';
+my $filename2 = 'primeResult.txt';
 open(DES, '>', $filename2) or die $!;while(<FH>){
 	
    print $_;
