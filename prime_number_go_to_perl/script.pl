@@ -4,13 +4,16 @@ use 5.010;
 use strict;
 use warnings;
 
-my $filename = 'result.txt';
+
+my $filename = 'result.txt';
 open(FH, '<', $filename) or die $!;
 
-
+
+
 my $filename2 = 'primeResult.txt';
-open(DES, '>', $filename2) or die $!;while(<FH>){
-	
+open(DES, '>', $filename2) or die $!;
+
+while(<FH>){
    print $_;
    if (index($_, "not") == -1) {
 	my $index = index($_, ' ');
@@ -19,5 +22,6 @@ open(DES, '>', $filename2) or die $!;while(<FH>){
    }
    
 }
-close(FH);
+
+close(FH);
 close(des);
