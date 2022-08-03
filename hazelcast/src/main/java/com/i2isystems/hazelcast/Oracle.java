@@ -35,7 +35,8 @@ public class Oracle {
 			for (int i = 0; i <20000; i++) {
 			    Random rand = new Random();
 			    int rand_int = rand.nextInt();
-			    statement.setInt(i,rand_int);
+			    statement.setInt(1,rand_int);
+			    statement.setInt(2,rand_int);
 			}
 
 				statement.executeUpdate();
