@@ -26,7 +26,7 @@ public class App
 		System.out.println("Oracle select 20000 users time : "+oracleTime.selectNumbers(conn)+" ms");       
 		
 		
-//		String message = oracleTimePerformans.truncateUsersTable(conn);
+//		String message = oracleTime.truncateUsersTable(conn);
 //		System.out.println(message);
 		
 		oracleTime.closeConnection(conn);
