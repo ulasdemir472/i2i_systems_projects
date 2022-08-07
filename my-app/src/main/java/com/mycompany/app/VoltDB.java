@@ -21,7 +21,7 @@ public class VoltDB {
 
         long start = System.currentTimeMillis();
 
-        for (int i = 0; i <1000 ; i++) {
+        for (int i = 0; i <25000 ; i++) {
 
             telno = random.nextInt(1000000000) + 1;
             usage = random.nextInt(10)+1;
