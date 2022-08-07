@@ -40,7 +40,7 @@ public class Oracle {
 
         try{
             statement = connection.prepareStatement(SQL);
-            for (int i = 0; i <1000; i++) {
+            for (int i = 0; i <25000; i++) {
                 int telno = random.nextInt(1000000000) + 1;
                 int usage = random.nextInt(10)+1;
                 int kalanMik =random.nextInt(10)+1;
