@@ -9,7 +9,7 @@ import java.util.Random;
 public class VoltDB {
     public void VoltDBOperations() throws SQLException {
 
-        Connection connection = DriverManager.getConnection("jdbc:voltdb://localhost:49153");
+        Connection connection = DriverManager.getConnection("jdbc:voltdb://localhost:49163");
 
         String[] paketNames = new String[]{"'cheap'","'expensive'","'student'","'boss'","'animal'","'bird'","'gold'"
                 ,"'Thor'","'Ironman'","'Spiderman'"};
@@ -18,6 +18,7 @@ public class VoltDB {
         int usage=0;
         int kalanMik=0;
         int paketNo=0;
+        String sqlAdd = "";
 
         long start = System.currentTimeMillis();
 
@@ -27,14 +28,11 @@ public class VoltDB {
             usage = random.nextInt(10)+1;
             kalanMik =random.nextInt(10)+1;
             paketNo =random.nextInt(10);
+            sqlAdd = sqlAdd +"INSERT INTO abone VALUES("+telno+","+usage+","+paketNames[paketNo]+","+kalanMik+");";
 
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO abone(TELNO,KALANMIK,PAKETAD,USAGE) VALUES(?,?,?,?)");
-            statement.setInt(1,telno);
-            statement.setInt(2,kalanMik);
-            statement.setString(3,paketNames[paketNo]);
-            statement.setInt(4,usage);
-            statement.executeUpdate();
         }
+        PreparedStatement statement = connection.prepareStatement(sqlAdd);
+        statement.executeUpdate();
         long end = System.currentTimeMillis();
         long result = end - start;
         System.out.println("Put 25000 data time in VoltDB : "+result+" ms");

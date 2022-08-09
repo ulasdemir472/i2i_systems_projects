@@ -31,26 +31,30 @@ public class Oracle {
         String[] paketNames = new String[]{"'cheap'","'expensive'","'student'","'boss'","'animal'","'bird'","'gold'"
                 ,"'Thor'","'Ironman'","'Spiderman'"};
 
-        String SQL = "INSERT INTO abone(TELNO,KALANMIK,PAKETAD,USAGE) VALUES(?,?,?,?)";
-
+        String sqlAdd = "insert into abone(telno,kalanmik,paketad,usage) values(?,?,?,?)";
         Connection connection = conn;
         PreparedStatement statement;
 
         long startTime = System.currentTimeMillis();
 
         try{
-            statement = connection.prepareStatement(SQL);
+
+            statement = connection.prepareStatement(sqlAdd);
             for (int i = 0; i <25000; i++) {
+
                 int telno = random.nextInt(1000000000) + 1;
                 int usage = random.nextInt(10)+1;
                 int kalanMik =random.nextInt(10)+1;
                 int paketNo =random.nextInt(10);
+
                 statement.setInt(1,telno);
                 statement.setInt(2,kalanMik);
-                statement.setString(3,paketNames[paketNo]);
+                statement.setString(3, paketNames[paketNo]);
                 statement.setInt(4,usage);
+
                 statement.executeUpdate();
             }
+
 
 
         } catch (SQLException ex) {
