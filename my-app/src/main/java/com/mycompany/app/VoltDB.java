@@ -37,7 +37,7 @@ public class VoltDB {
         }
         long end = System.currentTimeMillis();
         long result = end - start;
-        System.out.println("Put 25000 data time : "+result+" ms");
+        System.out.println("Put 25000 data time in VoltDB : "+result+" ms");
 
         connection.close();
 
